@@ -1,0 +1,7 @@
+- This is a Next.js 14 portfolio project using TypeScript and Tailwind CSS
+- Uses ShadCN UI components with Radix primitives
+- Framer Motion for animations
+- Dark theme with purple/blue gradient accents
+- Font stack: Inter (body), Space Grotesk (display), JetBrains Mono (code)
+- All portfolio data is in src/lib/data.ts
+- Custom hooks for scroll tracking, viewport detection in src/lib/hooks.ts
