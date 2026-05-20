@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Sora, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import SmoothScrollProvider from "@/components/providers/SmoothScrollProvider";
 
 const inter = Inter({
     subsets: ["latin"],
@@ -69,7 +70,9 @@ export default function RootLayout({
             <body
                 className={`${inter.variable} ${sora.variable} ${jetbrainsMono.variable} font-sans antialiased noise-overlay`}
             >
-                {children}
+                <SmoothScrollProvider>
+                    {children}
+                </SmoothScrollProvider>
             </body>
         </html>
     );
